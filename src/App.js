@@ -8,11 +8,11 @@ import Alert from './Components/Alert';
 import About from './Components/About';
 
 
-import {
-  BrowserRouter as Router,
- Routes,
-  Route
-} from "react-router-dom"; 
+// import {
+//   BrowserRouter as Router,
+//  Routes,
+//   Route
+// } from "react-router-dom"; 
 
 
 
@@ -78,7 +78,7 @@ function App() {
 {/* <Navbar  /> */} 
 
 
-<Router>
+{/* <Router> */}
 
 <Navbar title="Textutils" mode={mode}  togglemode={togglemode} />
 <Alert alert={alert}/> 
@@ -86,18 +86,18 @@ function App() {
 <div className="container my-3">
   
   
-<Routes>
+{/* <Routes> */}
 
-<Route path="/about" element={<About  mode={mode}/>} >  </Route>
+{/* <Route path="/about" element={<About  mode={mode}/>} >  </Route> */}
 
-<Route path="/"  element={<TextForm showAlert={showAlert} heading="Try Textutis - Word counter, Character Counter,Remove Extra Spaces   " mode={mode}/> }> </Route>
+{/* <Route path="/"  element={<TextForm showAlert={showAlert} heading="Try Textutis - Word counter, Character Counter,Remove Extra Spaces   " mode={mode}/> }> </Route> */}
 {/* if you use normal <TextForm/> than nightmode is not enabled it's some error that i have to fix */}
-{/* <TextForm showAlert={showAlert} heading="Enter the text to analyze below   " mode={mode}/> */}
+<TextForm showAlert={showAlert} heading="Enter the text to analyze below   " mode={mode}/>
 {/* <About/> */}
 
-</Routes>
+{/* </Routes> */}
 </div>
-</Router>
+{/* </Router> */}
     
    </>
   );
