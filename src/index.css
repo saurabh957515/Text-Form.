@@ -15,4 +15,8 @@ code {
 .accordian-button::after{
   filter: invert(1);
 }
+.btn{
+  margin:10px;
+  
+}
 
